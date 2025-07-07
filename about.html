@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Shagun Goyal</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+ <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: radial-gradient(ellipse at top left, #0f172a, #1e3a8a);
+      color: white;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 1rem
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 50;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #334155;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+
+    .logo {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+      letter-spacing: 1px;
+    }
+
+    .btn {
+      padding: 0.5rem 1.25rem;
+      border: 1px solid;
+      border-radius: 0.5rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .btn.blue {
+      border-color: #60a5fa;
+      color: #60a5fa;
+    }
+
+    .btn.blue:hover {
+      background-color: #60a5fa;
+      color: white;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+    }
+
+    .card {
+      background: linear-gradient(to bottom right, #1e293b, #0f172a);
+      padding: 2rem;
+      border-radius: 1rem;
+      border: 1px solid #334155;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+    .card2 {
+      background: linear-gradient(to bottom right, #1e293b, #0f172a);
+      padding: 2rem;
+      border-radius: 1rem;
+      border: 1px solid #334155;
+      transition: all 0.3s ease;
+      margin-top: 2rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+    .card3 {
+      background: linear-gradient(to bottom right, #1e293b, #0f172a);
+      padding: 2rem;
+      border-radius: 1rem;
+      border: 1px solid #334155;
+      transition: all 0.3s ease;
+      margin-top: 2rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .card:hover {
+      transform: translateY(-5px) scale(1.03);
+      border-color: #7dd3fc;
+    }
+    .card2:hover {
+      transform: translateY(-5px) scale(1.03);
+      border-color: #7dd3fc;
+    }
+    .card3:hover {
+      transform: translateY(-5px) scale(1.03);
+      border-color: #7dd3fc;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .text-white {
+      color: white;
+    }
+
+    .text-gray-300 {
+      color: #d1d5db;
+    }
+
+    .mb-2 { margin-bottom: 0.5rem; }
+    .mb-4 { margin-bottom: 1rem; }
+    .mb-16 { margin-bottom: 4rem; }
+
+    .text-4xl { font-size: 2.25rem; font-weight: 700; }
+    .text-2xl { font-size: 1.5rem; }
+    .text-lg { font-size: 1.125rem; }
+
+    .font-bold { font-weight: 700; }
+    .font-light { font-weight: 300; }
+    .italic { font-style: italic; }
+
+    .max-w-4xl { max-width: 64rem; }
+    .rounded-full { border-radius: 9999px; }
+    .rounded-2xl { border-radius: 1rem; }
+
+    .pt-32 { padding-top: 8rem; }
+
+    .grid { display: grid; }
+    .gap-12 { gap: 3rem; }
+    .gap-6 { gap: 1.5rem; }
+
+    .lg\:grid-cols-2 { grid-template-columns: repeat(1, 1fr); }
+    @media (min-width: 1024px) {
+      .lg\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    .md\:grid-cols-3 { grid-template-columns: repeat(1, 1fr); }
+    @media (min-width: 768px) {
+      .md\:grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .text-blue-400 { color: #60a5fa; }
+    .text-cyan-400 { color: #22d3ee; }
+    .text-yellow-400 { color: #facc15; }
+    .text-amber-400 { color: #fbbf24; }
+    .text-red-400 { color: #f87171; }
+    .footer {
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+  </style>
+<body class="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900">
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-content">
+      <a href="index.html" class="logo">About Me</a>
+      <a href="index.html" class="btn blue">
+        ← Back to Home
+      </a>
+    </div>
+  </nav>
+
+  <section class="container pt-32">
+    <div class="text-center mb-16">
+      <div class="flex justify-center items-center mb-4">
+        <span class="icon" style="color: #60a5fa; font-size: 2rem; margin-right: 1rem;">👤</span>
+        <h1 class="text-white text-4xl font-bold">About Me</h1>
+      </div>
+      <div class="w-24 h-1 bg-gradient-to-r from-blue-400 to-cyan-400 mx-auto rounded-full"></div>
+      <p class="text-gray-400 mt-6 text-lg">Get to know the person behind the code</p>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="grid lg:grid-cols-2 gap-12 mb-16">
+      <div class="space-y-6">
+        <div class="card">
+          <h3 class="text-white mb-2">💻 My Coding Journey</h3>
+          <p class="text-gray-300">
+            I'm a passionate full-stack developer who believes in the power of clean code and innovative solutions. My journey began with curiosity about how things work under the hood, which led me to explore programming languages from C++ to modern web technologies. Every line of code I write is driven by the desire to create meaningful digital experiences.
+          </p>
+        </div>
+        <div class="card2">
+          <h3 class="text-white mb-2">📘 Current Focus</h3>
+          <p class="text-gray-300">
+            Right now, I'm diving deep into Data Structures & Algorithms to strengthen my problem-solving foundation. Each algorithm I learn opens new possibilities for optimizing solutions.
+          </p>
+        </div>
+      </div>
+
+      <div class="space-y-6">
+        <div class="card">
+          <h3 class="text-white mb-2">🎮 Future Aspirations</h3>
+          <p class="text-gray-300">
+            My dream is to venture into game development, creating realistic 3D games and engaging web-based gaming experiences. I'm excited about combining my web development skills with game design principles to build immersive worlds.
+          </p>
+        </div>
+        <div class="card3">
+          <h3 class="text-white mb-2">💡 My Philosophy</h3>
+          <p class="text-gray-300">
+            I believe in continuous learning, clean code practices, and building applications that not only function well but provide exceptional user experiences.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Skills -->
+    <div class="grid md:grid-cols-3 gap-6 mb-16">
+      <div class="card text-center">
+        <h3 class="text-white">🎯 Problem Solver</h3>
+        <p class="text-gray-300">
+          Love tackling complex challenges and finding elegant solutions through algorithmic thinking.
+        </p>
+      </div>
+      <div class="card text-center">
+        <h3 class="text-white">☕ Coffee Enthusiast</h3>
+        <p class="text-gray-300">
+          Fueled by coffee and powered by curiosity. Late-night coding sessions are my specialty.
+        </p>
+      </div>
+      <div class="card text-center">
+        <h3 class="text-white">🧪 Tech Explorer</h3>
+        <p class="text-gray-300">
+          Always exploring new technologies and frameworks to stay ahead of the curve.
+        </p>
+      </div>
+    </div>
+
+    <!-- Quote -->
+    <div class="text-center">
+      <div class="card max-w-4xl mx-auto">
+        <blockquote class="text-2xl text-white font-light italic mb-4">
+          "Code is not just about solving problems; it's about crafting digital experiences that make a difference in people's lives."
+        </blockquote>
+        <cite class="text-blue-400 font-semibold">- Shagun Goyal</cite>
+      </div>
+    </div>
+  </section>
+  <div class="footer">&copy; 2025 Shagun Goyal. All rights reserved.</div>
+</body>
+</html>

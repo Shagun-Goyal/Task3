@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills - Shagun Goyal</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #010c10, #022b25);
+      color: white;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+   .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 50;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #334155;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-content {
+      max-width: 1200px;
+      display: flex;
+      margin: auto;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 0;
+    }
+
+    .logo {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+      letter-spacing: 1px;
+    }
+
+    .btn {
+      padding: 0.5rem 1.25rem;
+      border: 1px solid;
+      border-radius: 0.5rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .btn.blue {
+      border-color: #007f57;
+      color: white;
+    }
+
+    .btn.blue:hover {
+      background-color: #007f57;
+    }
+
+
+    h1 {
+      text-align: center;
+      font-size: 3.5rem;
+      margin-top: 8rem;
+      margin-bottom: 1rem;
+      color: #38bdf8;
+    }
+
+    .subheading {
+      text-align: center;
+      font-size: 1.25rem;
+      color: #cbd5e1;
+      margin-bottom: 3rem;
+    }
+
+    .category-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-bottom: 4rem;
+    }
+
+    .category-box {
+      background: #0f172a;
+      border: 1px solid #334155;
+      padding: 1.75rem 2.5rem;
+      border-radius: 1rem;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #e0f2fe;
+      box-shadow: 0 0 12px rgba(14, 165, 233, 0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .category-box:hover {
+      transform: scale(1.05);
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .skill-card {
+      background: linear-gradient(to right bottom, #0f172a, #1e293b);
+      border-radius: 1.25rem;
+      padding: 1.8rem 2rem;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s;
+    }
+
+    .skill-card:hover {
+      transform: scale(1.03);
+    }
+
+    .skill-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 0.75rem;
+      color: #e2e8f0;
+    }
+
+    .progress-bar {
+      background-color: #434343;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      height: 1rem;
+    }
+
+    .progress {
+      height: 100%;
+      transition: width 0.4s ease-in-out;
+    }
+
+    .progress.cplusplus { width: 85%; background: linear-gradient(to right, #2563eb, #60a5fa); }
+    .progress.javascript { width: 90%; background: linear-gradient(to right, #facc15, #fde68a); }
+    .progress.react { width: 85%; background: linear-gradient(to right, #38bdf8, #60a5fa); }
+    .progress.css { width: 90%; background: linear-gradient(to right, #ec4899, #f472b6); }
+    .progress.html { width: 95%; background: linear-gradient(to right, #f97316, #fb923c); }
+    .progress.dsa { width: 70%; background: linear-gradient(to right, #10b981, #34d399); }
+
+    .section-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 4rem;
+    }
+
+    .list-box {
+      flex: 1;
+      min-width: 300px;
+      max-width: 480px;
+      background: #0f172a;
+      padding: 2rem;
+      border-radius: 1.5rem;
+      border: 1px solid #334155;
+      box-shadow: 0 0 20px rgba(14, 165, 233, 0.3);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .list-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .list-box h3 {
+      font-size: 1.5rem;
+      color: #f8fafc;
+      margin-bottom: 1rem;
+    }
+
+    .list-box li {
+      color: #cbd5e1;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-content">
+      <a href="index.html" class="logo">My Skills</a>
+      <a href="index.html" class="btn blue">
+        ← Back to Home
+      </a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1>➤ Technical Skills</h1>
+    <p class="subheading">Technologies I work with and continuously improve upon</p>
+
+    <div class="category-row">
+      <div class="category-box">Frontend Development</div>
+      <div class="category-box">Backend Development</div>
+      <div class="category-box">Systems Programming</div>
+      <div class="category-box">Problem Solving</div>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card"><div class="skill-title">C++ <span style="font-size: 0.8rem; color:#94a3b8">(Systems)</span></div><div class="progress-bar"><div class="progress cplusplus"></div></div></div>
+      <div class="skill-card"><div class="skill-title">C <span style="font-size: 0.8rem; color:#94a3b8">(Systems)</span></div><div class="progress-bar"><div class="progress cplusplus" style="width: 80%"></div></div></div>
+      <div class="skill-card"><div class="skill-title">C# <span style="font-size: 0.8rem; color:#94a3b8">(Application)</span></div><div class="progress-bar"><div class="progress css" style="width: 75%"></div></div></div>
+      <div class="skill-card"><div class="skill-title">JavaScript <span style="font-size: 0.8rem; color:#94a3b8">(Web)</span></div><div class="progress-bar"><div class="progress javascript"></div></div></div>
+      <div class="skill-card"><div class="skill-title">React.js <span style="font-size: 0.8rem; color:#94a3b8">(Frontend)</span></div><div class="progress-bar"><div class="progress react"></div></div></div>
+      <div class="skill-card"><div class="skill-title">HTML <span style="font-size: 0.8rem; color:#94a3b8">(Markup)</span></div><div class="progress-bar"><div class="progress html"></div></div></div>
+      <div class="skill-card"><div class="skill-title">CSS <span style="font-size: 0.8rem; color:#94a3b8">(Styling)</span></div><div class="progress-bar"><div class="progress css"></div></div></div>
+      <div class="skill-card"><div class="skill-title">DSA <span style="font-size: 0.8rem; color:#94a3b8">(Logic)</span></div><div class="progress-bar"><div class="progress dsa"></div></div></div>
+    </div>
+
+    <div class="section-boxes">
+      <div class="list-box">
+        <h3>📚 Currently Learning</h3>
+        <ul>
+          <li>Data Structures & Algorithms</li>
+          <li>Advanced React Patterns</li>
+          <li>Game Development Fundamentals</li>
+        </ul>
+      </div>
+      <div class="list-box">
+        <h3>🏆 Achievements</h3>
+        <ul>
+          <li>Built 2+ Full Stack Projects</li>
+          <li>Mastered Multiple Languages</li>
+          <li>API Integration Expert</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="list-box" style="max-width: 800px; margin-top: 2.5rem; text-align: center">
+      <h3 style="color: #fcd34d; font-size: 1.5rem">⚡ Next Goals</h3>
+      <ul style="columns: 2; column-gap: 2rem; text-align: left;">
+        <li><strong style="color: #f87171">Master DSA</strong> - Complete advanced algorithms course</li>
+        <li><strong style="color: #60a5fa">Cloud Technologies</strong> - AWS and deployment skills</li>
+        <li><strong style="color: #a78bfa">Game Development</strong> - Learn Unity and 3D graphics</li>
+        <li><strong style="color: #4ade80">Mobile Development</strong> - React Native exploration</li>
+      </ul>
+    </div>
+
+    <div class="footer">&copy; 2025 Shagun Goyal. All rights reserved.</div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects | Shagun Goyal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #1c0e2d, #0a0a0a);
+      color: #fff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 50;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #334155;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-content {
+      max-width: 1200px;
+      display: flex;
+      margin: auto;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 0;
+    }
+
+    .logo {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+      letter-spacing: 1px;
+    }
+
+    .btn {
+      padding: 0.5rem 1.25rem;
+      border: 1px solid;
+      border-radius: 0.5rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .btn.blue {
+      border-color: rgb(75, 28, 91);
+      color:white;
+    }
+
+    .btn.blue:hover {
+      background-color: rgb(75, 28, 91);
+      color: white;
+    }
+
+
+    .section-header {
+      text-align: center;
+      margin-top: 7rem;
+      margin-bottom: 2rem;
+    }
+
+    .section-header h2 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-header p {
+      color: #cbd5e1;
+      font-size: 1rem;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    .stat {
+      background: #1e1b2e;
+      border-radius: 0.75rem;
+      padding: 1rem;
+      text-align: center;
+      border: 1px solid #333;
+    }
+
+    .stat h3 {
+      margin: 0.5rem 0 0;
+      font-size: 1.25rem;
+    }
+
+    .projects {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .project-card {
+      background: #1b1b32;
+      border-left: 4px solid orange;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      border: 1px solid #333;
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      color: #fff;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      font-size: 0.75rem;
+      color: white;
+      background-color: green;
+      border-radius: 12px;
+      margin-left: 0.5rem;
+    }
+
+    .features,
+    .tech {
+      margin: 0.75rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .features span,
+    .tech span {
+      background: #2c2c44;
+      color: #ccc;
+      padding: 0.4rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+    }
+
+    .buttons {
+      margin-top: 1rem;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    .github {
+      background: #e63946;
+    }
+
+    .demo {
+      background: #ffedd5;
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+    }
+    .demo1 {
+      background: #ffedd5;
+      color: black;
+    }
+
+    .next-box {
+      background: #1e1b2e;
+      margin-top: 4rem;
+      padding: 2rem;
+      border-radius: 1rem;
+      border: 1px solid #333;
+      text-align: center;
+    }
+
+    .next-box h3 {
+      margin-top: 0;
+      color: #00ffae;
+    }
+
+    .next-box p {
+      color: #ccc;
+    }
+
+    .next-box button {
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 0.5rem;
+      background: #00ffae;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="nav-content">
+      <a href="index.html" class="logo">My Projects</a>
+      <a href="index.html" class="btn blue">
+        ← Back to Home
+      </a>
+    </div>
+  </nav>
+
+  <section class="container">
+    <div class="section-header">
+      <h2>🚀 My Projects</h2>
+      <p>Showcasing my passion for creating functional and beautiful web applications</p>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <div>⭐</div>
+        <h3>2+ Projects</h3>
+      </div>
+      <div class="stat">
+        <div>🌐</div>
+        <h3>5+ Languages</h3>
+      </div>
+      <div class="stat">
+        <div>🔌</div>
+        <h3>API Integration</h3>
+      </div>
+      <div class="stat">
+        <div>📱</div>
+        <h3>100% Responsive</h3>
+      </div>
+    </div>
+
+    <div class="projects">
+      <div class="project-card">
+        <h3>Weather API Integration <span class="badge">Completed</span></h3>
+        <p>A dynamic weather application that provides real-time weather information using external API integration. Features include current weather conditions, forecasts, and location-based data.</p>
+        <div class="features">
+          <span>Real-time weather</span>
+          <span>Responsive UI</span>
+          <span>Location-based forecast</span>
+          <span>API Integration</span>
+        </div>
+        <div class="tech">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Weather API</span>
+        </div>
+        <div class="buttons">
+          <a href="https://github.com/Shagun-Goyal/Task1" target="_blank" class="github">🔗 View Source Code</a>
+          <a href="#" class="demo">🧪 Live Demo</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>News & Weather Hub <span class="badge">Updated</span></h3>
+        <p>A combined platform offering weather details and the latest news headlines with modern UI/UX and API handling. Responsive and multi-API enabled.</p>
+        <div class="features">
+          <span>Latest news updates</span>
+          <span>Weather Integration</span>
+          <span>Multiple APIs</span>
+          <span>Category filtering</span>
+        </div>
+        <div class="tech">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>React.js</span>
+          <span>News API</span>
+          <span>Weather API</span>
+        </div>
+        <div class="buttons">
+          <a href="https://github.com/Shagun-Goyal/Task2" target="_blank" class="github">🔗 View Source Code</a>
+          <a href="#" class="demo1">🧪 Live Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="next-box">
+      <h3>📌 What’s Coming Next?</h3>
+      <p>Browser-based 3D games • AI-powered weather/news analyzer • Machine learning integration • Full-stack dashboards</p>
+      <button><a href="contact.html">📍 Follow My Journey</a></button>
+    </div>
+  </section>
+</body>
+
+</html>

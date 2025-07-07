@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Shagun Goyal</title>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<style>
+    body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: linear-gradient(to bottom, #0f0f1b, #0a0a0a);
+  color: #f5f5f5;
+}
+
+.navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 50;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #334155;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-content {
+      max-width: 1200px;
+      display: flex;
+      margin: auto;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 0;
+    }
+
+    .logo {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+      letter-spacing: 1px;
+    }
+
+    .btn {
+      padding: 0.5rem 1.25rem;
+      border: 1px solid;
+      border-radius: 0.5rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .btn.blue {
+      border-color: #00ffd5;
+      color: white;
+    }
+
+    .btn.blue:hover {
+      background-color:#00dab5;
+    }
+
+.hero {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #00ffd5;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 1rem auto;
+  color: #cbd5e1;
+}
+
+.quick-facts {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+  background: #1f2937;
+  text-align: center;
+}
+
+.fact {
+  flex: 1 1 200px;
+  padding: 1rem;
+  border: 1px solid #2d3748;
+  border-radius: 10px;
+}
+
+.contact-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.card {
+  background: #111827;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #2d3748;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border-color: #00ffd5;
+}
+
+.card .icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card h3 {
+  margin: 0.5rem 0;
+  color: #00ffd5;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #00ffd5;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.contact-form-section {
+  background: #1a202c;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contact-form-section h2 {
+  margin-bottom: 1rem;
+  color: #00ffd5;
+}
+
+#contact-form {
+  display: grid;
+  gap: 1rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #2d3748;
+  background: #2d3748;
+  color: #f5f5f5;
+}
+
+#contact-form button {
+  padding: 0.75rem;
+  background: #00ffd5;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#form-status {
+  margin-top: 1rem;
+  color: #00ffd5;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+</style>
+<body>
+  <nav class="navbar">
+    <div class="nav-content">
+      <a href="index.html" class="logo">My Projects</a>
+      <a href="index.html" class="btn blue">
+        ← Back to Home
+      </a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Let's Connect</h1>
+    <p>I'm always excited to discuss new opportunities, collaborate on interesting projects, or just chat about technology and development. Let's create something amazing together!</p>
+  </section>
+
+  <section class="quick-facts">
+    <div class="fact"><strong>📍 Location:</strong> India</div>
+    <div class="fact"><strong>🕒 Timezone:</strong> IST (UTC+5:30)</div>
+    <div class="fact"><strong>💬 Languages:</strong> English, Hindi</div>
+    <div class="fact"><strong>🚀 Response:</strong> Under 24 hours</div>
+  </section>
+
+  <section class="contact-methods">
+    <div class="card">
+      <div class="icon">📧</div>
+      <h3>Email</h3>
+      <p>shagungoyal0401@gmail.com</p>
+      <a href="https://mail.google.com/mail/?view=cm&to=shagungoyal0401@gmail.com" target="_blank">Connect</a>
+    </div>
+    <div class="card">
+      <div class="icon">💬</div>
+      <h3>WhatsApp</h3>
+      <p>+91 9818931172</p>
+      <a href="https://wa.me/919818931172" target="_blank">Connect</a>
+    </div>
+    <div class="card">
+      <div class="icon">🔗</div>
+      <h3>LinkedIn</h3>
+      <p>Shagun Goyal</p>
+      <a href="https://www.linkedin.com/in/shagun-goyal-024802305" target="_blank">Connect</a>
+    </div>
+    <div class="card">
+      <div class="icon">🐱</div>
+      <h3>GitHub</h3>
+      <p>Shagun-Goyal</p>
+      <a href="https://github.com/Shagun-Goyal/Task1" target="_blank">Connect</a>
+    </div>
+  </section>
+
+  <section class="contact-form-section">
+    <h2>Send Me a Message</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="text" placeholder="Subject" required />
+      <textarea placeholder="Your message..." rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div id="form-status"></div>
+  </section>
+
+  <footer>
+    <p>© 2024 Shagun Goyal. Built with HTML, CSS & JavaScript.</p>
+  </footer>
+<script>
+  const startTime = Date.now(); // Start tracking time when page loads
+
+  document.getElementById("contact-form").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const timeSpent = Math.floor((Date.now() - startTime) / 1000); // in seconds
+    const form = e.target;
+
+    // Get input values by name (you can use form.name.value if name attribute is present)
+    const name = form.querySelector('input[placeholder="Your Name"]').value;
+    const email = form.querySelector('input[placeholder="Your Email"]').value;
+    const subject = form.querySelector('input[placeholder="Subject"]').value;
+    const message = form.querySelector('textarea[placeholder="Your message..."]').value;
+
+    const data = {
+      name,
+      email,
+      subject,
+      message,
+      timeSpent
+    };
+
+    try {
+      const response = await fetch('http://localhost:3000/send-message', {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      });
+
+      const result = await response.json();
+      document.getElementById("form-status").textContent = result.message || "✅ Message sent!";
+      form.reset();
+    } catch (error) {
+      document.getElementById("form-status").textContent = "❌ Failed to send. Please try again.";
+      console.error("Error sending message:", error);
+    }
+  });
+</script>
+
+
+</html>
